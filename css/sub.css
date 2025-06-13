@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* 공통 */
+.sub-mb{width: 100%; height: 100vh; background: url(../img/sub-bg.JPG) no-repeat center / cover;}
+
+@media (max-width: 1024px){
+  .sub-mb{height: 700px;}
+}
+
+@media (max-width: 765px){
+  .sub-mb{height: 500px;}
+}
+
+
+/* #brand */
+#brand .flex-wrap .video-box{text-align: center; padding: 200px 0 100px;}
+#brand .flex-wrap .video-box iframe{border-radius: 30px;}
+
+#brand .flex-wrap .tit-box{width: 1530px; height: 200px; padding: 15px 210px; background-color: #2352a2; color: white;}
+#brand .flex-wrap .tit-box h1{font-family: '! PEPSI !'; font-size: 7rem; font-weight: normal;}
+#brand .flex-wrap .tit-box p{font-size: 5rem; font-weight: 700;}
+
+#brand .txt-box{padding: 100px 220px 200px 0; text-align: right;}
+#brand .txt-box p{margin-bottom: 60px; font-size: 2rem; line-height: 1.5;}
+#brand .txt-box span{font-size: 1.4rem; opacity: 0.5;}
+
+@media (max-width: 1024px){
+  #brand .flex-wrap .video-box{padding: 150px 0 80px;}
+  #brand .flex-wrap .video-box iframe{width: 920px; height: 510px;}
+
+  #brand .flex-wrap .tit-box{width: 100%; height: 150px; text-align: center; padding: 15px 0;}
+  #brand .flex-wrap .tit-box h1{font-size: 5rem;}
+  #brand .flex-wrap .tit-box p{font-size: 3.5rem;}
+
+  #brand .txt-box{padding: 80px 0 150px; text-align: center;}
+  #brand .txt-box p{margin-bottom: 30px; font-size: 1.8rem;}
+}
+
+@media (max-width: 765px){
+  #brand .flex-wrap{display: flex; flex-direction: column-reverse;}
+
+  #brand .flex-wrap .tit-box{margin: 100px 0 50px; height: 110px; padding: 10px 0;}
+  #brand .flex-wrap .tit-box h1{font-size: 3.5rem;}
+  #brand .flex-wrap .tit-box p{font-size: 2.5rem;}
+
+  #brand .flex-wrap .video-box{padding: 0}
+  #brand .flex-wrap .video-box iframe{width: 695px; height: 390px;}
+
+  #brand .txt-box{padding: 50px 0 100px;}
+  #brand .txt-box p{font-size: 1.6rem;}
+}
+
+
+/* #product */
+#product .inner{padding: 200px 0; position: relative;}
+#product h1{font-family: '! PEPSI !'; font-size: 7rem; text-align: center; margin-bottom: 40px;}
+
+#product .tap-slide{width: 1220px; margin: 0 auto; margin-bottom: 60px;}
+#product .tap-slide ul li{width: 100px; opacity: 0.5; transition: all 0.5s;}
+#product .tap-slide ul li:hover{opacity: 1;}
+#product .tap-slide ul li img{width: 100%;}
+#product .tap-slide ul li.swiper-slide-thumb-active{opacity: 1;}
+
+#product .product-slide ul li{display: flex; position: relative; justify-content: center;}
+#product .product-slide .img-box{width: 290px;}
+#product .product-slide .img-box img{width: 100%;}
+#product .product-slide .txt-box{width: 840px; height: 400px; padding: 40px 140px; background-color: #2352a2; color: white; margin-top: 100px;}
+#product .product-slide .txt-box h2{font-family: '! PEPSI !'; font-size: 3.7rem; font-weight: normal;}
+#product .product-slide .txt-box h2::after{content: ""; display: block; width: 560px; height: 2px; background-color: white; margin: 10px 0 15px;}
+#product .product-slide .txt-box .txt-wrap{display: flex; gap: 160px; line-height: 2; font-size: 2rem;}
+#product .product-slide .txt-box .txt-wrap span{opacity: 0.7;}
+
+#product .swiper-button-next::after, #product .swiper-button-prev::after{display: none;}
+#product .swiper-button-next{background: url(../img/next_arrow.png) no-repeat center;}
+#product .swiper-button-prev{background: url(../img/prev_arrow.png) no-repeat center;}
+
+@media (max-width: 1024px){
+  #product .inner{padding: 150px 0;}
+  #product h1{font-size: 5rem;}
+
+  #product .tap-slide{width: 920px;}
+  #product .tap-slide ul li{width: 75px;}
+
+  #product .product-slide .img-box{width: 200px;}
+  #product .product-slide .txt-box{width: 600px; height: 280px; padding: 20px 50px; margin-top: 70px;}
+  #product .product-slide .txt-box h2{font-size: 3rem;}
+  #product .product-slide .txt-box h2::after{width: 500px; margin: 5px 0 10px;}
+  #product .product-slide .txt-box .txt-wrap{line-height: 1.7; font-size: 1.8rem;}
+}
+
+@media (max-width: 765px){
+  #product .inner{padding: 100px 0;}
+  #product h1{font-size: 3.5rem;}
+
+  #product .tap-slide{display: none;}
+
+  #product .product-slide .img-box{width: 165px;}
+  #product .product-slide .txt-box{width: 400px; height: 230px; padding: 15px 30px; margin-top: 60px;}
+  #product .product-slide .txt-box h2{font-size: 2.5rem;}
+  #product .product-slide .txt-box h2::after{width: 340px;}
+  #product .product-slide .txt-box .txt-wrap{gap: 100px;}
+  #product .product-slide .txt-box .txt-wrap{font-size: 1.6rem; line-height: 1.5;}
+}
+
+
+/* #story */
+#story{padding: 200px 0;}
+#story h1{font-family: '! PEPSI !'; font-size: 7rem; text-align: center; margin-bottom: 60px;}
+
+#story .story-slide .img-box{width: 500px; height: 500px;}
+#story .story-slide .img-box img{width: 100%; border-radius: 50%;}
+
+#story .story-slide .txt-box{text-align: center; opacity: 0; transition: all 0.5s; transform: translateY(-65px);}
+#story .swiper-slide-active .txt-box{opacity: 1;}
+#story .story-slide .txt-box p{font-family: '! PEPSI !'; font-size: 5rem; margin-bottom: 25px; opacity: 0.5;}
+#story .story-slide .txt-box dl{position: relative;}
+#story .story-slide .txt-box dt{font-size: 2.5rem; font-weight: bold; margin-bottom: 40px;}
+#story .story-slide .txt-box dd{font-size: 2rem;}
+#story .story-slide .txt-box .line{width: 50px; height: 2px; background-color: black; margin-bottom: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 50px;}
+
+@media (max-width: 1024px){
+  #story{padding: 150px 0;}
+  #story h1{font-size: 5rem;}
+
+  #story .story-slide .img-box{width: 380px; height: 380px;}
+
+  #story .story-slide .txt-box{transform: translateY(-55px);}
+  #story .story-slide .txt-box p{font-size: 3.5rem;}
+  #story .story-slide .txt-box dt{font-size: 2rem;}
+  #story .story-slide .txt-box dd{font-size: 1.8rem;}
+}
+
+@media (max-width: 765px){
+  #story{padding: 100px 0;}
+  #story h1{font-size: 3.5rem;}
+  #story .story-slide .img-box{width: 350px; height: 350px;}
+  #story .story-slide .txt-box{transform: translateY(-50px);}
+}
+
+
+/* #better */
+#better{padding: 200px 0;}
+
+#better .inner > div{position: relative; width: 1180px; height: 800px; margin: 0 auto;}
+#better .inner > div:not(:last-child){margin-bottom: 90px;}
+
+#better .better1 .img-box, #better .better3 .img-box{position: absolute; left: 0; top: 0;}
+#better .better1 .txt-box, #better .better3 .txt-box{position: absolute; right: 0; bottom: 0; text-align: right;}
+#better .better2 .img-box, #better .better4 .img-box{position: absolute; right: 0; top: 0;}
+#better .better2 .txt-box, #better .better4 .txt-box{position: absolute; left: 0; bottom: 0;}
+
+#better .img-box{z-index: 99;}
+#better .img-box img{width: 455px; height: 680px;}
+
+#better .txt-box{width: 1015px; height: 500px; background-color: #ddd; padding: 50px 70px; position: relative;}
+#better .txt-box h1{font-size: 5rem; font-weight: bold; line-height: 1.2; margin-bottom: 60px;}
+#better .txt-box h1::after{content: ""; display: block; width: 667px; height: 2px; background-color: black; position: absolute; right: 60px; top: 250px;}
+#better .better2 .txt-box h1::after, #better .better4 .txt-box h1::after{left: 60px;}
+#better .better3 .txt-box h1::after{top: 190px;}
+#better .txt-box span{display: block;}
+#better .txt-box img{width: 545px;}
+#better .txt-box span{display: block; font-family: '! PEPSI !'; font-size: 7rem;}
+
+@media (max-width: 1024px){
+  #better{padding: 150px 0;}
+
+  #better .inner > div{width: 925px; height: 650px;}
+  #better .inner > div:not(:last-child){margin-bottom: 50px;}
+
+  #better .img-box img{width: 400px; height: 550px;}
+  #better .txt-box{width: 880px; height: 380px; padding: 40px 50px;}
+  #better .txt-box h1{font-size: 4rem; margin-bottom: 40px;}
+  #better .txt-box h1::after{width: 490px; right: 40px; top: 200px;}
+  #better .better2 .txt-box h1::after, #better .better4 .txt-box h1::after{left: 40px;}
+  #better .better3 .txt-box h1::after{top: 150px;}
+  #better .txt-box img{width: 380px;}
+  #better .txt-box span{font-size: 5rem;}
+}
+
+@media (max-width: 765px){
+  #better{padding: 100px 0;}
+
+  #better .inner > div{width: 695px; height: 500px;}
+  #better .img-box img{width: 340px; height: 500px;}
+  #better .txt-box{width: 356px; height: 500px; padding: 120px 35px;}
+  #better .txt-box h1{font-size: 3rem;}
+  #better .txt-box h1::after{width: 330px; right: 30px; top: 240px;}
+  #better .better2 .txt-box h1::after, #better .better4 .txt-box h1::after{left: 30px;}
+    #better .better3 .txt-box h1::after{top: 205px;}
+  #better .txt-box img{width: 278px;}
+  #better .txt-box span{font-size: 4rem;}
+}
+
+
+/* #news */
+#news{padding: 200px 0;}
+
+#news > div{position: relative;}
+#news > div:not(:last-child){margin-bottom: 90px;}
+
+#news h1{font-family: '! PEPSI !'; font-size: 7rem; margin-bottom: 30px;}
+#news .news2{text-align: right;}
+
+#news .img-box{width: 1430px; height: 805px;}
+#news .img-box img{width: 100%;}
+
+#news .txt-box{width: 1500px; height: 200px; padding: 15px 100px; background-color: #ddd;}
+#news .news1 .txt-box, #news .news3 .txt-box{text-align: right;}
+#news .txt-box p{font-size: 3rem; font-weight: bold; margin-bottom: 20px;}
+#news .txt-box a{display: block; font-size: 2rem;}

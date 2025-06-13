@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '! PEPSI !';
+    font-style: normal;
+    font-weight: normal;
+    src: local('! PEPSI !'), url('../font/PEPSI_pl.woff') format('woff');
+    }
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#wrap{overflow: hidden;}
+html{font-size: 10px;}
+body{font-family: 'Pretendard-Regular', sans-serif; font-size: 1.6rem; line-height: 1.35;}
+ol, ul{list-style: none;}
+a{text-decoration: none; color: black;}
+caption, legend{display: none;}
+select, input, fieldset, button{border: 0; outline: none; vertical-align: top;}
+img{vertical-align: top;}
