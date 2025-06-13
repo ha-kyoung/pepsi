@@ -193,18 +193,47 @@
 
 
 /* #news */
-#news{padding: 200px 0;}
+#news{padding: 200px 0 400px;}
 
 #news > div{position: relative;}
-#news > div:not(:last-child){margin-bottom: 90px;}
+#news > div:not(:last-child){margin-bottom: 250px;}
 
-#news h1{font-family: '! PEPSI !'; font-size: 7rem; margin-bottom: 30px;}
-#news .news2{text-align: right;}
+#news h1{font-family: '! PEPSI !'; font-size: 7rem; margin-bottom: 30px; font-weight: normal;}
+#news .news2 h1{text-align: right;}
 
-#news .img-box{width: 1430px; height: 805px;}
+#news .img-box{width: 1000px; height: 560px;}
 #news .img-box img{width: 100%;}
+#news .news2 .img-box{margin: 0 0 -350px auto;}
 
-#news .txt-box{width: 1500px; height: 200px; padding: 15px 100px; background-color: #ddd;}
-#news .news1 .txt-box, #news .news3 .txt-box{text-align: right;}
+#news .txt-box{width: 1500px; height: 190px; padding: 30px 100px; background-color: #ddd;}
+#news .news1 .txt-box, #news .news3 .txt-box{text-align: right; margin: -350px 0 0 auto;}
 #news .txt-box p{font-size: 3rem; font-weight: bold; margin-bottom: 20px;}
-#news .txt-box a{display: block; font-size: 2rem;}
+#news .txt-box a{display: block; font-size: 2rem; font-weight: bold; transition: all 0.5s;}
+#news .txt-box a:hover{color: #2352a2;}
+
+@media (max-width: 1024px){
+  #news{padding: 150px 0;}
+  #news > div:not(:last-child){margin-bottom: 100px;}
+
+  #news h1{font-size: 5rem; margin-bottom: 20px;}
+
+  #news .img-box{width: 787px; height: 442px;}
+  #news .news2 .img-box{margin: 0 0 0 auto;}
+
+  #news .txt-box{width: 800px; height: 170px;}
+  #news .news1 .txt-box, #news .news3 .txt-box{text-align: right; margin: 0 0 0 auto;}
+  #news .txt-box p{font-size: 2.5rem; margin-bottom: 15px;}
+  #news .txt-box a{font-size: 1.8rem;}
+}
+
+@media (max-width: 765px){
+  #news{padding: 100px 0;}
+
+  #news h1{font-size: 3.5rem; text-align: center;}
+  #news .news2 h1{text-align: center;}
+
+  #news .img-box{width: 100%; height: 390px;}
+  #news .news2 .img-box{margin: 0;}
+  #news .txt-box{width: 100%; height: 150px; padding: 20px 0; text-align: center;}
+  #news .news1 .txt-box, #news .news3 .txt-box{text-align: center; margin: 0;}
+}
