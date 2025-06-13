@@ -1,5 +1,13 @@
 $(document).ready(function(){ //시작
 
+  $(window).scroll(function() {
+    if($(window).scrollTop() > 900) {
+      $('header').addClass('act');
+    } else {
+      $('header').removeClass('act');
+    }
+  });
+
   // .search-box
   $(".search-box").hide();
   $(".search-btn").click(function(){
