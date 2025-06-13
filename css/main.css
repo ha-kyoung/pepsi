@@ -96,10 +96,10 @@
 .food-slide ul li .txt-box p{font-size: 7rem; font-weight: bold; font-family: '! PEPSI !'; font-weight: normal;}
 .food-slide ul li .img-box{width: 100%; height: 730px; position: relative; border-radius: 30px;}
 
-.food-slide ul li.food1 .img-box{background: url(/img/food_01.jpg) no-repeat bottom / cover; background-position: 100% 75%;}
-.food-slide ul li.food2 .img-box{background: url(/img/food_02.jpg) no-repeat bottom / cover; background-position: 50% 75%;}
-.food-slide ul li.food3 .img-box{background: url(/img/food_03.jpg) no-repeat bottom / cover; background-position: 50% 90%;}
-.food-slide ul li.food4 .img-box{background: url(/img/food_04.jpg) no-repeat bottom / cover; background-position: 50% 70%;}
+.food-slide ul li.food1 .img-box{background: url(../img/food_01.jpg) no-repeat bottom / cover; background-position: 100% 75%;}
+.food-slide ul li.food2 .img-box{background: url(../img/food_02.jpg) no-repeat bottom / cover; background-position: 50% 75%;}
+.food-slide ul li.food3 .img-box{background: url(../img/food_03.jpg) no-repeat bottom / cover; background-position: 50% 90%;}
+.food-slide ul li.food4 .img-box{background: url(../img/food_04.jpg) no-repeat bottom / cover; background-position: 50% 70%;}
 
 .food-slide .swiper-slide-active .txt-box{display: block;}
 
