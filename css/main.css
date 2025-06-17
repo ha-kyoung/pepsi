@@ -9,7 +9,7 @@
 
 #main-banner .swiper-slide{position: relative}
 .main-slide .mb-txt{text-align: right; position: absolute; top: 50%; right: 100px; transform: translateY(-50%); color: white;}
-.main-slide .mb-txt h1{font-size: 7rem; margin-bottom: 10px;}
+.main-slide .mb-txt h1{font-size: 7rem; margin-bottom: 10px; font-weight: bold;}
 .main-slide .mb-txt p{font-size: 2.5rem;}
 
 .main-slide .swiper-pagination-bullet{background: white;}
@@ -23,33 +23,31 @@
 
 @media (max-width: 765px){
   .main-slide .mb-txt{right: 35px;}
-  .main-slide .mb-txt h1{font-size: 4rem;}
-  .main-slide .mb-txt p{font-size: 1.8rem;}
 }
 
 
 /* #menu */
 #menu{padding: 200px 0; position: relative;}
-#menu h1{font-size: 7rem; text-transform: uppercase; font-weight: 900; margin-bottom: 35px; text-align: center; font-family: '! PEPSI !';}
+#menu h1{font-size: 7rem; text-transform: uppercase; font-weight: normal; margin-bottom: 35px; text-align: center; font-family: '! PEPSI !';}
 .menu-slide ul li{text-align: center; margin-top: 50px; opacity: 0.7;}
 .menu-slide ul li img{width: 70%;}
-.menu-slide ul li span{display: block; text-align: center; font-size: 2rem; font-weight: 700; margin-top: 70px; font-family: '! PEPSI !';}
+.menu-slide ul li span{display: block; text-align: center; font-size: 2rem; font-weight: normal; margin-top: 70px; font-family: '! PEPSI !';}
 .menu-slide .swiper-slide-active{margin: 0; opacity: 1;}
 .menu-slide .swiper-slide-active img{width: 80%;}
-.menu-slide .swiper-slide-active span{font-size: 3rem; font-weight: 900; margin-top: 30px; font-family: '! PEPSI !';}
+.menu-slide .swiper-slide-active span{font-size: 3rem; font-weight: 900; margin-top: 45px; font-family: '! PEPSI !';}
 #menu .menu-bg{width: 400px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 #menu .menu-bg img{width: 100%;}
-#menu .more{display: block; padding: 10px 60px; background-color: #2352a2; color: white; border-radius: 50px; text-transform: uppercase; opacity: 0.7; transition: all 0.5s; position: absolute; left: 50%; transform: translateX(-50%); margin-top: 20px; font-size: 2rem;}
+#menu .more{display: block; padding: 10px 60px; background-color: #2352a2; color: white; border-radius: 50px; text-transform: uppercase; opacity: 0.7; transition: all 0.5s; position: absolute; left: 50%; transform: translateX(-50%); margin-top: 40px; font-size: 2rem;}
 #menu .more:hover{opacity: 1;}
 
 @media (max-width: 1024px){
   #menu{padding: 150px 0;}
   #menu h1{font-size: 4.5rem;}
   .menu-slide ul li{margin-top: 30px;}
-  .menu-slide ul li span{font-size: 1.6rem; margin-top: 50px;}
-  .menu-slide .swiper-slide-active span{font-size: 2.5rem; margin-top: 20px;}
-  #menu .menu-bg{width: 300px;}
-  #menu .more{padding: 10px 40px; font-size: 1.4rem;}
+  .menu-slide ul li span{font-size: 1.8rem; margin-top: 50px;}
+  .menu-slide .swiper-slide-active span{font-size: 2.3rem; margin-top: 25px;}
+  #menu .menu-bg{width: 320px;}
+  #menu .more{padding: 10px 40px; font-size: 1.4rem; margin-top: 30px;}
 }
 
 @media (max-width: 765px){
@@ -97,8 +95,8 @@
 .food-slide ul li .img-box{width: 100%; height: 730px; position: relative; border-radius: 30px;}
 
 .food-slide ul li.food1 .img-box{background: url(../img/food_01.jpg) no-repeat bottom / cover; background-position: 100% 75%;}
-.food-slide ul li.food2 .img-box{background: url(../img/food_02.jpg) no-repeat bottom / cover; background-position: 50% 75%;}
-.food-slide ul li.food3 .img-box{background: url(../img/food_03.jpg) no-repeat bottom / cover; background-position: 50% 90%;}
+.food-slide ul li.food2 .img-box{background: url(../img/food_02.jpg) no-repeat bottom / cover; background-position: 100% 75%;}
+.food-slide ul li.food3 .img-box{background: url(../img/food_03.jpg) no-repeat bottom / cover; background-position: 100% 85%;}
 .food-slide ul li.food4 .img-box{background: url(../img/food_04.jpg) no-repeat bottom / cover; background-position: 50% 70%;}
 
 .food-slide .swiper-slide-active .txt-box{display: block;}
@@ -118,7 +116,9 @@
   .food-slide ul li .txt-box{padding-top: 100px;}
   .food-slide ul li .txt-box p{font-size: 4.5rem;}
   .food-slide ul li .img-box{height: 430px;}
-  .food-slide .swiper-pagination{top: 80vh;}
+  .food-slide ul li.food2 .img-box{background: url(../img/food_02.jpg) no-repeat bottom / cover; background-position: 100% 80%;}
+  .food-slide ul li.food3 .img-box{background: url(../img/food_03.jpg) no-repeat bottom / cover; background-position: 100% 90%;}
+  .food-slide .swiper-pagination{top: 50vh;}
   .food-slide .swiper-button-next, .food-slide .swiper-button-prev{display: none;}
 }
 

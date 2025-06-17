@@ -35,6 +35,9 @@ header.act .gnb li a{color: black; font-weight: bold;}
 .gnb li a::after{content: ""; display: block; width: 120%; height: 2px; background-color: white; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); opacity: 0; transition: all 0.4s;}
 .gnb li a:hover:after{bottom: -5px; opacity: 1;}
 
+header.act .gnb li a::before{background: black;}
+header.act .gnb li a::after{background-color: black;}
+
 .utill{display: flex; gap: 40px;}
 .utill li .search-btn{width: 20px; height: 20px; background-color: transparent; background: url(../img/search_w.png) no-repeat center / contain; cursor: pointer;}
 .utill li .menu-btn{width: 20px; height: 20px; background-color: transparent; background: url(../img/menu_w.png) no-repeat center / contain; cursor: pointer;}

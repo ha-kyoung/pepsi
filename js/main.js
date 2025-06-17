@@ -67,7 +67,7 @@ $(document).ready(function(){ //시작
   // food-slide
   const food_slide = new Swiper('.food-slide', {
     loop: true,
-    slidesPerView: 1.1, // (기본 모바일)가로 한줄에 보이는 슬라이드 갯수
+    slidesPerView: 1.2, // (기본 모바일)가로 한줄에 보이는 슬라이드 갯수
     spaceBetween: 30, // 슬라이드 간의 거리 px
     centeredSlides: true, // 첫번째 슬라이드가 정중앙에
     navigation: {
@@ -77,6 +77,12 @@ $(document).ready(function(){ //시작
     pagination: {
       el: ".swiper-pagination", // 슬라이드 페이지 버튼
       type: "progressbar", // 'bullets' 'fraction' 'progressbar'
+    },
+    breakpoints: { // 반응형 슬라이드
+      765: {
+        slidesPerView: 1.1,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -119,7 +125,6 @@ $(document).ready(function(){ //시작
 
   // #story
   const story_slide = new Swiper('.story-slide', {
-    loop: true,
     slidesPerView: 2, // (기본 모바일)가로 한줄에 보이는 슬라이드 갯수
     spaceBetween: 30, // 슬라이드 간의 거리 px
     centeredSlides: true,
